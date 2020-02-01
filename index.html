@@ -35,14 +35,6 @@
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
-      <section class="search-form-title">
-        <h2>Поиск гостиницы</h2>
-        <h3>Заинтересовались?</h3>
-        <p>
-          Укажите предполагаемые даты поездки, <br />
-          и мы покажем вам лучшие предложения гостиниц в седоне
-        </p>
-      </section>
       <section class="advantages">
         <h2>Преимущества</h2>
         <h3>
@@ -100,6 +92,42 @@
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
+      </section>
+      <section class="search-form-title">
+        <h2>Поиск гостиницы</h2>
+        <h3>Заинтересовались?</h3>
+        <p>
+          Укажите предполагаемые даты поездки, <br />
+          и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <button type="button">Поиск гостиницы в Седоне</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="conteiner-date">
+            <label for="check-in">Дата заезда:</label>
+            <input
+              id="check-in"
+              type="date"
+              name="date-check-in"
+              value="2020-31-01"
+            />
+            <img src="img/calendar.svg" alt="Иконка календаря" />
+          </div>
+          <div class="conteiner-date">
+            <label for="check-out">Дата выезда:</label>
+            <input
+              id="check-out"
+              type="date"
+              name="date-check-out"
+              value="2020-28-02"
+            />
+            <img src="img/calendar.svg" alt="Иконка календаря" />
+          </div>
+          <label for="adult">Взрослые:</label>
+          <input id="adult" type="number" name="count-adult" value="1" />
+          <label for="children">Дети:</label>
+          <input id="children" type="number" name="count-children" value="0" />
+          <button type="submit">Найти</button>
+        </form>
       </section>
       <section class="map">
         <h2>Карта</h2>
