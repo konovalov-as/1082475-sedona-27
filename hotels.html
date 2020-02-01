@@ -28,13 +28,96 @@
     <main>
       <section class="filter">
         <h2>Фильтр гостиниц</h2>
-        <!-- Здесь будет форма -->
-        <button type="submit">Показать</button>
+        <form
+          action="https://echo.htmlacademy.ru"
+          method="post"
+          oninput="priceoutputmax.value=pricecount.value"
+        >
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input
+                  id="filter-swim-pool"
+                  type="checkbox"
+                  name="swim-pool"
+                  checked
+                />
+                <label for="filter-swim-pool">Бассейн</label>
+              </li>
+              <li>
+                <input id="filter-parking" type="checkbox" name="parking" />
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input id="filter-wi-fi" type="checkbox" name="wi-fi" />
+                <label for="filter-wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input id="filter-hotel" type="checkbox" name="hotel" checked />
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input id="filter-motel" type="checkbox" name="motel" checked />
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li>
+                <input
+                  id="filter-apartments"
+                  type="checkbox"
+                  name="apartments"
+                  checked
+                />
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <output name="priceoutputmin">0</output>
+            <output name="priceoutputmax">2000</output>
+            <input
+              id="pricecount"
+              type="range"
+              name="pricecount"
+              min="0"
+              max="3000"
+              value="2000"
+            />
+            <!-- Пример кода из раздела "Вопросы к разделу «Доступность и формы»" -->
+            <div class="range-slider">
+              <input type="number" value="0" name="min" />
+              <input type="number" value="0" name="max" />
+
+              <div class="range-slider-track">
+                <div class="range-slider-pin range-slider-pin-min"></div>
+                <div class="range-slider-pin range-slider-pin-max"></div>
+              </div>
+            </div>
+            <!-- Пример кода из раздела "Вопросы к разделу «Доступность и формы»" -->
+            <!-- Как разметить range с двумя позунками? -->
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
       <section class="list-hotels">
         <h2>
           Список гостиниц
         </h2>
+        <div class="results-search">
+          <span>Найдено:</span>
+          <span>3</span>
+          <span>Сортировка</span>
+          <a href="">По цене</a>
+          <a href="">По типу</a>
+          <a href="">По рейтингу</a>
+          <!-- Элемент вверх / вниз -->
+        </div>
         <ul>
           <li>
             <h3>
@@ -53,6 +136,14 @@
             <a href="">Подробнее</a>
             <a href="">Забронировать</a>
             <!-- star img -->
+            <!-- Рейтинг - это декоративные элементы или их нужно добавить в разметку? -->
+            <div class="rating">
+              <img src="img/star.svg" alt="" />
+              <img src="img/star.svg" alt="" />
+              <img src="img/star.svg" alt="" />
+              <img src="img/star.svg" alt="" />
+              <img src="img/star.svg" alt="" />
+            </div>
             <p>Рейтинг: 8,5</p>
           </li>
           <li>
