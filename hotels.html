@@ -16,7 +16,6 @@
             height="72"
           />
         </a>
-
         <ul>
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-and-video.html">Фото и видео</a></li>
@@ -28,11 +27,7 @@
     <main>
       <section class="filter-hotels">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <form
-          action="https://echo.htmlacademy.ru"
-          method="post"
-          oninput="priceoutputmax.value=pricecount.value"
-        >
+        <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
@@ -79,18 +74,12 @@
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
-            <output name="priceoutputmin">0</output>
-            <output name="priceoutputmax">2000</output>
-            <input
-              id="pricecount"
-              type="range"
-              name="pricecount"
-              min="0"
-              max="3000"
-              value="2000"
-            />
-            <!-- Пример кода из раздела "Вопросы к разделу «Доступность и формы»" -->
-            <div class="range-slider">
+            <input type="number" name="pricemin" value="0" />
+            <input type="number" name="pricemax" value="3000" />
+            <!-- Блок с двумя ползункаим -->
+
+            <!-- Пример кода из раздела "Вопросы к разделу «Доступность и формы»" HTML Academy -->
+            <!-- <div class="range-slider">
               <input type="number" value="0" name="min" />
               <input type="number" value="0" name="max" />
 
@@ -98,9 +87,8 @@
                 <div class="range-slider-pin range-slider-pin-min"></div>
                 <div class="range-slider-pin range-slider-pin-max"></div>
               </div>
-            </div>
-            <!-- Пример кода из раздела "Вопросы к разделу «Доступность и формы»" -->
-            <!-- Как разметить range с двумя позунками? -->
+            </div> -->
+            <!-- Пример кода из раздела "Вопросы к разделу «Доступность и формы»" HTML Academy -->
           </fieldset>
           <button type="submit">Показать</button>
         </form>
@@ -122,7 +110,6 @@
         <h2 class="visually-hidden">
           Список гостиниц
         </h2>
-
         <ul>
           <li>
             <h3>
