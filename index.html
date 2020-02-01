@@ -110,7 +110,7 @@
               name="date-check-in"
               value="2020-31-01"
             />
-            <img src="img/calendar.svg" alt="Иконка календаря" />
+            <button type="button">Календарь</button>
           </div>
           <div class="conteiner-date">
             <label for="check-out">Дата выезда:</label>
@@ -120,12 +120,25 @@
               name="date-check-out"
               value="2020-28-02"
             />
-            <img src="img/calendar.svg" alt="Иконка календаря" />
+            <button type="button">Календарь</button>
           </div>
-          <label for="adult">Взрослые:</label>
-          <input id="adult" type="number" name="count-adult" value="1" />
-          <label for="children">Дети:</label>
-          <input id="children" type="number" name="count-children" value="0" />
+          <div class="container-adult">
+            <label for="adult">Взрослые:</label>
+            <button type="button">-</button>
+            <input id="adult" type="number" name="count-adult" value="2" />
+            <button type="button">+</button>
+          </div>
+          <div class="container-children">
+            <label for="children">Дети:</label>
+            <button type="button">-</button>
+            <input
+              id="children"
+              type="number"
+              name="count-children"
+              value="0"
+            />
+            <button type="button">+</button>
+          </div>
           <button type="submit">Найти</button>
         </form>
       </section>
