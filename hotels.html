@@ -18,7 +18,7 @@
             height="72"
           />
         </a>
-        <ul>
+        <ul class="navigation-main list-style-none">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-and-video.html">Фото и видео</a></li>
           <li><a href="map-of-the-state.html">Карта штата</a></li>
@@ -26,14 +26,14 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="page-hotels">
       <h1 class="visually-hidden">Поиск гостиниц в седоне</h1>
       <section class="filter-hotels">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Инфраструктура:</legend>
-            <ul>
+            <ul class="list-style-none">
               <li>
                 <input
                   id="filter-swim-pool"
@@ -55,7 +55,7 @@
           </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
-            <ul>
+            <ul class="list-style-none">
               <li>
                 <input id="filter-hotel" type="checkbox" name="hotel" checked />
                 <label for="filter-hotel">Гостиница</label>
@@ -76,10 +76,10 @@
             </ul>
           </fieldset>
           <fieldset>
+            <!-- Блок с двумя ползункаим -->
             <legend>Стоимость в сутки (Р):</legend>
             <input type="number" name="pricemin" value="0" />
             <input type="number" name="pricemax" value="3000" />
-            <!-- Блок с двумя ползункаим -->
 
             <!-- Пример кода из раздела "Вопросы к разделу «Доступность и формы»" HTML Academy -->
             <!-- <div class="range-slider">
@@ -99,22 +99,24 @@
       <section class="sort-hotels">
         <h2 class="visually-hidden">Сортировка гостиниц</h2>
         <span>Найдено: 3</span>
-        <span>Сортировка</span>
-        <ul>
-          <li><a href="">По цене</a></li>
-          <li><a href="">По типу</a></li>
-          <li><a href="">По рейтингу</a></li>
-          <li><a href="">По возрастанию</a></li>
-          <li><a href="">По убыванию</a></li>
+        <span>Сортировка:</span>
+        <ul class="list-style-none">
+          <li>
+            <a class="sort-hotels__active--link" href="">По цене</a>
+          </li>
+          <li><a class="dashed" href="">По типу</a></li>
+          <li><a class="dashed" href="">По рейтингу</a></li>
+          <li><a class="dashed" href="">По возрастанию</a></li>
+          <li><a class="dashed" href="">По убыванию</a></li>
         </ul>
       </section>
       <section class="list-hotels">
         <h2 class="visually-hidden">
           Список гостиниц
         </h2>
-        <ul>
+        <ul class="list-style-none">
           <li>
-            <h3>
+            <h3 class="list-hotels__title">
               <a href="">Amara Resort & Spa</a>
             </h3>
             <a href=""
@@ -127,20 +129,12 @@
             </a>
             <p>Гостиница</p>
             <p>От 4000 Р.</p>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
-            <!-- star img -->
-            <div class="rating">
-              <img src="img/star.svg" alt="" />
-              <img src="img/star.svg" alt="" />
-              <img src="img/star.svg" alt="" />
-              <img src="img/star.svg" alt="" />
-              <img src="img/star.svg" alt="" />
-            </div>
+            <a class="list-hotels__detail" href="">Подробнее</a>
+            <a class="list-hotels__reserve" href="">Забронировать</a>
             <p>Рейтинг: 8,5</p>
           </li>
           <li>
-            <h3>
+            <h3 class="list-hotels__title">
               <a href="">Desert Quail Inn</a>
             </h3>
             <a href=""
@@ -153,13 +147,12 @@
             </a>
             <p>Мотель</p>
             <p>От 3000 Р.</p>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
-            <!-- star img -->
+            <a class="list-hotels__detail" href="">Подробнее</a>
+            <a class="list-hotels__reserve" href="">Забронировать</a>
             <p>Рейтинг: 8,9</p>
           </li>
           <li>
-            <h3>
+            <h3 class="list-hotels__title">
               <a href="">Villas at Poco Diablo</a>
             </h3>
             <a href=""
@@ -172,18 +165,17 @@
             </a>
             <p>Апартаменты</p>
             <p>От 2000 Р.</p>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
-            <!-- star img -->
+            <a class="list-hotels__detail" href="">Подробнее</a>
+            <a class="list-hotels__reserve" href="">Забронировать</a>
             <p>Рейтинг: 9,2</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <p>#visitSEDONA</p>
       <p>Тел: +7(495) 666-02-66</p>
-      <ul>
+      <ul class="list-style-none">
         <li><a href="">Twitter</a></li>
         <li><a href="">Facebook</a></li>
         <li><a href="">YouTube</a></li>

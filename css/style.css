@@ -14,6 +14,253 @@
     url(../fonts/ptsansbold.woff);
 }
 
+/* General styles */
 body {
   font-family: "PTSans", "Arial", sans-serif;
+  color: black;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+.list-style-none li {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Page index */
+.page-main {
+  text-align: center;
+}
+
+/* Header styles */
+.navigation-main a {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Information styles */
+.info-main p {
+  line-height: 26px;
+}
+
+.info-main p:first-of-type {
+  font-weight: bold;
+}
+
+.info-main p:last-of-type {
+  font-size: 14px;
+}
+
+/* Advantages styles */
+.advantage-main {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.advantage-main span {
+  font-weight: bold;
+}
+
+.advantage-main h3,
+.attractions-main h3 {
+  font-size: 21px;
+}
+
+.advantage-main p,
+.conditions-main p {
+  font-size: 14px;
+}
+
+.attractions-main li {
+  background-color: #eeeeee;
+}
+
+.attractions-main p {
+  color: #333333;
+  font-size: 14px;
+}
+
+/* Search styles */
+.search-main p:first-of-type {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.search-main p:last-of-type {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.search-main .open-form {
+  background-color: #766357;
+  color: #ffffff;
+  line-height: 21px;
+}
+
+.search-main button,
+.search-main input {
+  border: none;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.search-main label,
+.search-main input[type="date"],
+.search-main input[type="number"] {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 26px;
+}
+
+.search-main input[type="number"] {
+  text-align: center;
+}
+
+.search-main input[type="date"],
+.search-main input[type="number"] {
+  background-color: #f2f2f2;
+}
+
+.search-main button[type="submit"] {
+  background-color: #81b3d2;
+  color: white;
+  font-weight: bold;
+}
+
+/* Footer styles */
+.page-footer {
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+}
+
+.page-footer a {
+  color: black;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+/* Page hotels */
+/* Filters style */
+.filter-hotels {
+  background-color: #455760;
+  color: white;
+  text-align: left;
+}
+
+.filter-hotels legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter-hotels label {
+  font-size: 14px;
+}
+
+.filter-hotels input[type="number"] {
+  background-color: #455760;
+  border: none;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.filter-hotels button[type="submit"] {
+  font-size: 14px;
+  line-height: 21px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  text-align: left;
+}
+
+/* Sort style */
+.sort-hotels span:first-of-type {
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.sort-hotels span:last-of-type {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-hotels a {
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-hotels .dashed {
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-hotels .sort-hotels__active--link {
+  border: none;
+  color: #81b3d2;
+}
+
+/* List hotels style */
+.list-hotels__title a {
+  line-height: 26px;
+  text-decoration: none;
+  color: black;
+}
+
+.list-hotels p {
+  font-size: 14px;
+  color: #333333;
+}
+
+.list-hotels li p:last-of-type {
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #666666;
+}
+
+.list-hotels__detail,
+.list-hotels__reserve {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.list-hotels__detail {
+  background-color: #81b3d2;
+}
+
+.list-hotels__reserve {
+  background-color: #766357;
 }

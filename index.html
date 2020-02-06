@@ -17,7 +17,7 @@
             height="72"
           />
         </a>
-        <ul>
+        <ul class="navigation-main list-style-none">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-and-video.html">Фото и видео</a></li>
           <li><a href="map-of-the-state.html">Карта штата</a></li>
@@ -25,9 +25,9 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="page-main">
       <h1 class="visually-hidden">Седона - город в Аризоне</h1>
-      <section class="info">
+      <section class="info-main">
         <h2 class="visually-hidden">Краткая информация о Седоне</h2>
         <img
           src="img/welcome.svg"
@@ -40,21 +40,21 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <div class="advantage-one">
+        <div class="advantage-main">
           <h3>
             <span>Настоящий</span>
             <span>городок</span>
           </h3>
           <p>— №1 —</p>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img
-            src="img/photo-town.jpg"
-            alt="Фотография городка"
-            width="800"
-            height="256"
-          />
         </div>
-        <ul class="conditions">
+        <img
+          src="img/photo-town1.jpg"
+          alt="Фотография городка"
+          width="800"
+          height="256"
+        />
+        <ul class="conditions-main list-style-none">
           <li>
             <h4>Жильё</h4>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -68,21 +68,21 @@
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
-        <div class="advantage-two">
+        <div class="advantage-main">
           <h3>
             Там есть <br />
             Мост дьявола
           </h3>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          <img
-            src="img/photo-bridge.jpg"
-            alt="Фотография моста дьявола"
-            width="800"
-            height="256"
-          />
         </div>
-        <ul class="attractions">
+        <img
+          src="img/photo-bridge.jpg"
+          alt="Фотография моста дьявола"
+          width="800"
+          height="256"
+        />
+        <ul class="attractions-main list-style-none">
           <li>
             <h3>Небольшая площадь</h3>
             <p>— №3 —</p>
@@ -100,14 +100,16 @@
           </li>
         </ul>
       </section>
-      <section class="search-form-title">
+      <section class="search-main">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <h3>Заинтересовались?</h3>
+        <p>Заинтересовались?</p>
         <p>
           Укажите предполагаемые даты поездки, <br />
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <button class="open-form" type="button">
+          Поиск гостиницы в Седоне
+        </button>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="conteiner-date">
             <label for="check-in">Дата заезда:</label>
@@ -129,10 +131,10 @@
             />
             <button type="button">Календарь</button>
           </div>
-          <div class="container-adult">
-            <label for="adult">Взрослые:</label>
+          <div class="container-adults">
+            <label for="adults">Взрослые:</label>
             <button type="button">-</button>
-            <input id="adult" type="number" name="count-adult" value="2" />
+            <input id="adults" type="number" name="count-adult" value="2" />
             <button type="button">+</button>
           </div>
           <div class="container-children">
@@ -159,10 +161,10 @@
         ></script>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <p>#visitSEDONA</p>
       <p>Тел: +7(495) 666-02-66</p>
-      <ul>
+      <ul class="list-style-none">
         <li><a href="">Twitter</a></li>
         <li><a href="">Facebook</a></li>
         <li><a href="">YouTube</a></li>
