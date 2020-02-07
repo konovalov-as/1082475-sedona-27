@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
   font-family: "PTSans";
   font-weight: 400;
@@ -48,12 +49,12 @@ input[type="number"] {
 }
 
 /* Page index */
-.page-main {
+.main-page {
   text-align: center;
 }
 
 /* Header styles */
-.navigation-main a {
+.main-navigation__list a {
   color: black;
   font-size: 14px;
   font-weight: bold;
@@ -75,93 +76,96 @@ input[type="number"] {
   font-size: 14px;
 }
 
-/* Advantages styles */
-.advantage-main {
+/* Advantages & conditions styles */
+.advantages__content {
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-.advantage-main span {
+.advantages__content span {
   font-weight: bold;
 }
 
-.advantage-main h3,
-.attractions-main h3 {
+.advantages__content h3,
+.attractions__list h3 {
   font-size: 21px;
 }
 
-.advantage-main p,
-.conditions-main p {
+.advantages__content p,
+.conditions__list p {
   font-size: 14px;
 }
 
-.attractions-main li {
+.attractions-main li,
+.attractions__list li {
   background-color: #eeeeee;
 }
 
-.attractions-main p {
+.attractions-main p,
+.attractions__list p {
   color: #333333;
   font-size: 14px;
 }
 
 /* Search styles */
-.search-main p:first-of-type {
+.search-hotels p:first-of-type {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
 }
 
-.search-main p:last-of-type {
+.search-hotels p:last-of-type {
   font-size: 14px;
   line-height: 24px;
   color: #333333;
 }
 
-.search-main .open-form {
+.search-hotels__open-form[type="button"] {
   background-color: #766357;
   color: #ffffff;
-  line-height: 21px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
-.search-main button,
-.search-main input {
+.search-hotels button,
+.search-hotels input {
   border: none;
   line-height: 26px;
   text-transform: uppercase;
 }
 
-.search-main label,
-.search-main input[type="date"],
-.search-main input[type="number"] {
+.search-hotels label,
+.search-hotels input[type="date"],
+.search-hotels input[type="number"] {
   font-size: 14px;
   font-weight: bold;
   text-align: left;
   line-height: 26px;
 }
 
-.search-main input[type="number"] {
+.search-hotels input[type="number"] {
   text-align: center;
 }
 
-.search-main input[type="date"],
-.search-main input[type="number"] {
+.search-hotels input[type="date"],
+.search-hotels input[type="number"] {
   background-color: #f2f2f2;
 }
 
-.search-main button[type="submit"] {
+.search-hotels button[type="submit"] {
   background-color: #81b3d2;
   color: white;
   font-weight: bold;
 }
 
 /* Footer styles */
-.page-footer {
+.main-footer {
   font-weight: bold;
   text-align: center;
   line-height: 26px;
 }
 
-.page-footer a {
+.main-footer a {
   color: black;
   line-height: 26px;
   text-decoration: none;

@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-navigation__logo">
           <img
             src="img/logo.svg"
             alt="Логотип города Седона"
@@ -18,7 +18,7 @@
             height="72"
           />
         </a>
-        <ul class="navigation-main list-style-none">
+        <ul class="main-navigation__list list-style-none">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-and-video.html">Фото и видео</a></li>
           <li><a href="map-of-the-state.html">Карта штата</a></li>
@@ -26,7 +26,7 @@
         </ul>
       </nav>
     </header>
-    <main class="page-hotels">
+    <main class="hotels-page">
       <h1 class="visually-hidden">Поиск гостиниц в седоне</h1>
       <section class="filter-hotels">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
@@ -100,7 +100,7 @@
         <h2 class="visually-hidden">Сортировка гостиниц</h2>
         <span>Найдено: 3</span>
         <span>Сортировка:</span>
-        <ul class="list-style-none">
+        <ul class="sort-hotels__list list-style-none">
           <li>
             <a class="sort-hotels__active--link" href="">По цене</a>
           </li>
@@ -114,7 +114,7 @@
         <h2 class="visually-hidden">
           Список гостиниц
         </h2>
-        <ul class="list-style-none">
+        <ul class="list-hotels__list list-style-none">
           <li>
             <h3 class="list-hotels__title">
               <a href="">Amara Resort & Spa</a>
@@ -172,7 +172,7 @@
         </ul>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="main-footer">
       <p>#visitSEDONA</p>
       <p>Тел: +7(495) 666-02-66</p>
       <ul class="list-style-none">
