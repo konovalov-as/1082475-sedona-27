@@ -101,8 +101,7 @@ input[type="number"] {
   font-size: 14px;
 }
 
-.attractions-main li,
-.attractions__list li {
+.attractions__list {
   background-color: #eeeeee;
 }
 
@@ -276,25 +275,35 @@ input[type="number"] {
 
 /* Layout style */
 /* Page index */
+
 html,
 body {
+  box-sizing: border-box;
   min-width: 1280px;
   min-height: 2762px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .main-container {
   background-image: url("../img/sedona-index.jpg");
   background-size: 1280px auto;
   background-repeat: no-repeat;
-  background-position: center;
-  max-width: 1200px;
+  background-position: left top;
+  max-width: 1280px;
   margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* Header style */
-.main-header {
-  margin-bottom: 30px;
-}
+/* .main-header {
+  margin-bottom: 76px;
+} */
 
 .main-navigation {
   display: flex;
@@ -310,8 +319,8 @@ body {
 
 .main-navigation__list {
   display: flex;
-  width: 1200px;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-evenly;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -319,10 +328,22 @@ body {
 
 /* Info style */
 .info-main {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 717;
+  /* Временно, для определения высоты */
+  min-height: 717px;
+  padding-top: 61px;
+}
+
+.info-main img {
+  margin-bottom: 140px;
+}
+
+.info-main p:first-of-type {
+  width: 440px;
+  margin-bottom: 38px;
 }
 
 /* Advantages style */
@@ -331,23 +352,65 @@ body {
   flex-wrap: wrap;
 }
 
+.advantages__content {
+  width: 400px;
+}
+
+.conditions__list {
+  /* Временно, для определения высоты */
+  height: 290px;
+}
+
 .conditions__list,
 .attractions__list {
   display: flex;
+  align-items: center;
   width: 1200px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.attractions__list {
+  /* Временно, для определения высоты */
+  height: 256px;
+}
+
+.attractions__list li {
+  margin-right: 56px;
+}
+
+.attractions__list li:nth-of-type(3n) {
+  margin-right: 0;
+}
+
 /* Search-hotels style */
 .search-hotels {
-  /* Добавить размеры формы и кнопок */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-hotels__open-form {
+  width: 568px;
+  /* Временно, для определения высоты */
+  height: 86px;
+}
+
+.search-hotels form {
+  width: 568px;
+  /* Временно, для определения высоты */
+  height: 395px;
+  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* map style */
 .map {
-  width: 1200px;
+  width: 100%;
+  /* Временно, для определения высоты */
   height: 593px;
 }
 
@@ -355,7 +418,7 @@ body {
 .main-footer {
   display: flex;
   justify-content: space-evenly;
-  align-items: centergit;
+  align-items: center;
 }
 
 .social-list {
