@@ -2,7 +2,7 @@
   font-family: "PTSans";
   font-weight: 400;
   font-style: normal;
-  src: local("PTSans"), url(../fonts/ptsans.woff2) format("woff2"),
+  src: url(../fonts/ptsans.woff2) format("woff2"),
     url(../fonts/ptsans.woff) format("woff");
 }
 
@@ -10,8 +10,8 @@
   font-family: "PTSans";
   font-weight: 700;
   font-style: normal;
-  src: local("PTSans"), url(../fonts/ptsansbold.woff2),
-    url(../fonts/ptsansbold.woff);
+  src: url(../fonts/ptsansbold.woff2) format("woff2"),
+    url(../fonts/ptsansbold.woff) format("woff");
 }
 
 /* General styles */
@@ -23,7 +23,6 @@ body {
   font-style: normal;
   line-height: 21px;
   letter-spacing: normal;
-  text-transform: uppercase;
 }
 
 .list-style-none li {
@@ -38,17 +37,17 @@ body {
   margin: -1px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.no-arrow::-webkit-outer-spin-button,
+.no-arrow::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-input[type="number"] {
+.no-arrow {
   -moz-appearance: textfield;
 }
 
 /* Page index */
-.page-main {
+.text-center {
   text-align: center;
 }
 
@@ -60,11 +59,13 @@ input[type="number"] {
   line-height: 26px;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* Information styles */
 .info-main p {
   line-height: 26px;
+  text-transform: uppercase;
 }
 
 .info-main p:first-of-type {
@@ -83,6 +84,7 @@ input[type="number"] {
 
 .advantage-main span {
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .advantage-main h3,
@@ -93,6 +95,24 @@ input[type="number"] {
 .advantage-main p,
 .conditions-main p {
   font-size: 14px;
+  text-transform: uppercase;
+}
+
+.advantage-main p:last-of-type,
+.conditions-main p:last-of-type {
+  text-transform: uppercase;
+}
+
+.conditions-main li,
+.conditions-main p {
+  text-transform: uppercase;
+}
+
+.advantage-main h3,
+.advantage-main p:last-of-type,
+.attractions-main h3,
+.attractions-main p:last-of-type {
+  text-transform: uppercase;
 }
 
 .attractions-main li {
@@ -109,18 +129,24 @@ input[type="number"] {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-.search-main p:last-of-type {
+.search-main p:nth-of-type(2) {
   font-size: 14px;
   line-height: 24px;
   color: #333333;
+  text-transform: uppercase;
 }
 
 .search-main .open-form {
   background-color: #766357;
   color: #ffffff;
-  line-height: 21px;
+  line-height: 26px;
+}
+
+.search-main label {
+  text-transform: uppercase;
 }
 
 .search-main button,
@@ -148,16 +174,20 @@ input[type="number"] {
   background-color: #f2f2f2;
 }
 
-.search-main button[type="submit"] {
+.search-main button[type="submit"].submit-form {
   background-color: #81b3d2;
   color: white;
   font-weight: bold;
 }
 
 /* Footer styles */
+.page-footer p,
+.page-footer p {
+  text-transform: uppercase;
+}
+
 .page-footer {
   font-weight: bold;
-  text-align: center;
   line-height: 26px;
 }
 
@@ -178,10 +208,12 @@ input[type="number"] {
 .filter-hotels legend {
   font-size: 16px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .filter-hotels label {
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .filter-hotels input[type="number"] {
@@ -191,10 +223,9 @@ input[type="number"] {
   line-height: 21px;
   text-align: center;
   color: white;
-  text-transform: uppercase;
 }
 
-.filter-hotels button[type="submit"] {
+.filter-hotels button[type="submit"].submit-form {
   font-size: 14px;
   line-height: 21px;
   background-color: transparent;
@@ -208,17 +239,20 @@ input[type="number"] {
 .sort-hotels span:first-of-type {
   line-height: 26px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .sort-hotels span:last-of-type {
   font-size: 12px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .sort-hotels a {
   font-size: 12px;
   line-height: 18px;
   text-decoration: none;
+  text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -236,11 +270,13 @@ input[type="number"] {
   line-height: 26px;
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
 }
 
 .list-hotels p {
   font-size: 14px;
   color: #333333;
+  text-transform: uppercase;
 }
 
 .list-hotels li p:last-of-type {
@@ -255,6 +291,7 @@ input[type="number"] {
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .list-hotels__detail {
