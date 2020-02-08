@@ -3,7 +3,7 @@
   font-family: "PTSans";
   font-weight: 400;
   font-style: normal;
-  src: local("PTSans"), url(../fonts/ptsans.woff2) format("woff2"),
+  src: url(../fonts/ptsans.woff2) format("woff2"),
     url(../fonts/ptsans.woff) format("woff");
 }
 
@@ -11,8 +11,8 @@
   font-family: "PTSans";
   font-weight: 700;
   font-style: normal;
-  src: local("PTSans"), url(../fonts/ptsansbold.woff2),
-    url(../fonts/ptsansbold.woff);
+  src: url(../fonts/ptsansbold.woff2) format("woff2"),
+    url(../fonts/ptsansbold.woff) format("woff");
 }
 
 /* Fonts, color and background-color style*/
@@ -275,21 +275,19 @@ input[type="number"] {
 }
 
 /* Layout style */
+/* Page index */
 html,
 body {
   min-width: 1280px;
   min-height: 2762px;
 }
 
-body {
+.main-container {
   background-image: url("../img/sedona-index.jpg");
   background-size: 1280px auto;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.main-container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -312,16 +310,62 @@ body {
 
 .main-navigation__list {
   display: flex;
-  width: 1280px;
+  width: 1200px;
   justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+/* Info style */
 .info-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 717;
+}
+
+/* Advantages style */
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conditions__list,
+.attractions__list {
+  display: flex;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Search-hotels style */
+.search-hotels {
+  /* Добавить размеры формы и кнопок */
+}
+
+/* map style */
+.map {
+  width: 1200px;
+  height: 593px;
+}
+
+/* Footer style */
+.main-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: centergit;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-list li {
+  margin: 5px;
 }
