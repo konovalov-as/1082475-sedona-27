@@ -1,4 +1,4 @@
-/* Fonts */
+/* Link fonts */
 @font-face {
   font-family: "PTSans";
   font-weight: 400;
@@ -15,6 +15,7 @@
     url(../fonts/ptsansbold.woff);
 }
 
+/* Fonts, color and background-color style*/
 /* General styles */
 body {
   font-family: "PTSans", "Arial", sans-serif;
@@ -64,6 +65,10 @@ input[type="number"] {
 }
 
 /* Information styles */
+.info-main {
+  background-color: #68a0ae;
+}
+
 .info-main p {
   line-height: 26px;
 }
@@ -267,4 +272,56 @@ input[type="number"] {
 
 .list-hotels__reserve {
   background-color: #766357;
+}
+
+/* Layout style */
+html,
+body {
+  min-width: 1280px;
+  min-height: 2762px;
+}
+
+body {
+  background-image: url("../img/sedona-index.jpg");
+  background-size: 1280px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header style */
+.main-header {
+  margin-bottom: 30px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-navigation__logo {
+  order: 2;
+  width: 140px;
+  height: 72px;
+}
+
+.main-navigation__list {
+  display: flex;
+  width: 1280px;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 717;
 }
