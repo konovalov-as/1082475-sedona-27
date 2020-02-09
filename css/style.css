@@ -275,12 +275,9 @@ input[type="number"] {
 
 /* Layout style */
 /* Page index */
-
 html,
 body {
   box-sizing: border-box;
-  min-width: 1280px;
-  min-height: 2762px;
 }
 
 *,
@@ -295,6 +292,8 @@ body {
   background-repeat: no-repeat;
   background-position: left top;
   max-width: 1280px;
+  /* Временно, для определения высоты */
+  min-height: 2762px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
@@ -407,7 +406,7 @@ body {
   align-items: center;
 }
 
-/* map style */
+/* Map style */
 .map {
   width: 100%;
   /* Временно, для определения высоты */
@@ -431,4 +430,65 @@ body {
 
 .social-list li {
   margin: 5px;
+}
+
+/* Page hotels */
+.hotels-container {
+  background-image: url("../img/sedona-hotels.jpg");
+  background-size: 1280px auto;
+  background-repeat: no-repeat;
+  background-position: left top;
+  max-width: 1280px;
+  /* Временно, для определения высоты */
+  min-height: 933px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.filter-hotels form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.filter-hotels {
+  /* Временно, для определения высоты */
+  min-height: 217px;
+}
+
+/* Sort-hotelsstyle */
+.sort-hotels {
+  display: flex;
+  align-items: center;
+  /* Временно, для определения высоты */
+  min-height: 86px;
+}
+
+.sort-hotels span:first-of-type {
+  margin-left: 72px;
+  margin-right: 49px;
+}
+
+.sort-hotels__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* List-hotels style*/
+.list-hotels__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-hotels__list li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
