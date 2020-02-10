@@ -125,6 +125,11 @@ body {
 }
 
 /* Search styles */
+.search-hotels form {
+  z-index: 1000;
+  background-color: white;
+}
+
 .search-hotels p:first-of-type {
   font-size: 30px;
   line-height: 36px;
@@ -203,6 +208,10 @@ body {
   background-color: #455760;
   color: white;
   text-align: left;
+}
+
+.filter-hotels fieldset {
+  border: none;
 }
 
 .filter-hotels legend {
@@ -316,7 +325,7 @@ body {
 }
 
 .main-container {
-  /* background-image: url("../img/sedona-index.jpg"); */
+  background-image: url("../img/sedona-index.jpg");
   background-size: 1280px auto;
   background-repeat: no-repeat;
   background-position: left top;
@@ -334,12 +343,15 @@ body {
 } */
 
 .main-navigation {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .main-navigation__logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 70px);
   order: 2;
   width: 140px;
   height: 72px;
@@ -348,11 +360,22 @@ body {
 .main-navigation__list {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  align-items: center;
+  height: 56px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
+/* ----- Пока не знаю как другому решить выпадение логотипа из потока и распределение пунктов меню */
+.main-navigation__list li {
+  width: 239px;
+}
+
+.main-navigation__list li:nth-child(3) {
+  margin-left: 244px;
+}
+/* ----- */
 
 /* Info style */
 .info-main {
@@ -381,6 +404,9 @@ body {
 }
 
 .advantages__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 400px;
 }
 
@@ -419,6 +445,10 @@ body {
   align-items: center;
 }
 
+.search-hotels p:first-of-type {
+  margin-top: 100px;
+}
+
 .search-hotels__open-form {
   width: 568px;
   /* Временно, для определения высоты */
@@ -437,9 +467,9 @@ body {
 
 /* Map style */
 .map {
+  position: relative;
+  top: -395px;
   width: 100%;
-  /* Временно, для определения высоты */
-  height: 593px;
 }
 
 /* Footer style */
@@ -529,3 +559,21 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+
+.list-hotels__list p {
+  display: inline;
+}
+
+.list-hotels__list .list-hotels__img {
+  order: -10;
+}
+/*
+.list-hotels__list div {
+  display: flex;
+  margin: 5px;
+}
+
+.list-hotels__list div p,
+.list-hotels__list div a {
+  margin: 5px;
+} */
