@@ -70,11 +70,11 @@ body {
   text-transform: uppercase;
 }
 
-.info-main p:first-of-type {
+.info-main__paragraph-1 {
   font-weight: bold;
 }
 
-.info-main p:nth-of-type(2) {
+.info-main__paragraph-2 {
   font-size: 14px;
 }
 
@@ -125,8 +125,15 @@ body {
 }
 
 /* Search styles */
+.search-hotels {
+  position: relative;
+}
+
 .search-hotels form {
-  z-index: 1000;
+  position: absolute;
+  top: 100%;
+  margin: 0 auto;
+  z-index: 100;
   background-color: white;
 }
 
@@ -325,7 +332,6 @@ body {
 }
 
 .main-container {
-  background-image: url("../img/sedona-index.jpg");
   background-size: 1280px auto;
   background-repeat: no-repeat;
   background-position: left top;
@@ -467,8 +473,8 @@ body {
 
 /* Map style */
 .map {
-  position: relative;
-  top: -395px;
+  /* position: relative; */
+  /* top: -395px; */
   width: 100%;
 }
 
@@ -493,7 +499,6 @@ body {
 
 /* Page hotels */
 .hotels-container {
-  /* background-image: url("../img/sedona-hotels.jpg"); */
   background-size: 1280px auto;
   background-repeat: no-repeat;
   background-position: left top;
@@ -547,8 +552,6 @@ body {
 
 /* List-hotels style*/
 .list-hotels__list {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -556,24 +559,36 @@ body {
 
 .list-hotels__list li {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-hotels__inner-1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 }
 
-.list-hotels__list p {
-  display: inline;
+.list-hotels__inner-1 div {
+  width: 500px;
+  margin-bottom: 10px;
 }
 
-.list-hotels__list .list-hotels__img {
-  order: -10;
-}
-/*
-.list-hotels__list div {
-  display: flex;
-  margin: 5px;
+.list-hotels__inner-1 p {
+  display: inline-block;
+  margin: 0;
 }
 
-.list-hotels__list div p,
-.list-hotels__list div a {
-  margin: 5px;
-} */
+.list-hotels__inner-1 p:first-of-type {
+  margin-right: 30px;
+}
+
+.list-hotels__inner-1 a:first-of-type {
+  margin-right: 10px;
+}
+
+.list-hotels__img {
+  order: -1;
+}
