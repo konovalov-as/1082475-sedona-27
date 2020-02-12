@@ -55,7 +55,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
-  text-align: center;
+  /* text-align: center; */
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -365,7 +365,7 @@ body {
 
 .main-navigation__list {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   align-items: center;
   height: 56px;
   margin: 0;
@@ -373,24 +373,12 @@ body {
   list-style: none;
 }
 
-/* ----- Пока не знаю как другому решить выпадение логотипа из потока и распределение пунктов меню */
-.main-navigation__list li {
-  width: 239px;
-}
-
-.main-navigation__list li:nth-child(3) {
-  margin-left: 244px;
-}
-/* ----- */
-
 /* Info style */
 .info-main {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Временно, для определения высоты */
-  min-height: 717px;
   padding-top: 61px;
 }
 
@@ -576,6 +564,26 @@ body {
 
 .list-hotels__list .list-hotels__rating {
   align-self: flex-end;
+}
+
+/*  Decoration style */
+/* Page index */
+.main-navigation__list a {
+  display: block;
+  width: 300px;
+}
+
+.main-navigation__list--left {
+  text-align: left;
+}
+
+.main-navigation__list--right {
+  text-align: right;
+}
+
+.info-main {
+  background-image: url(../img/intro-mask.svg), url(../img/background-photo.jpg);
+  background-repeat: no-repeat, no-repeat;
 }
 /*
 .list-hotels__inner-1 {
