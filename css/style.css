@@ -537,6 +537,7 @@ body {
 }
 
 .sort-hotels span:first-of-type {
+  width: 160px;
   margin-left: 72px;
   margin-right: 49px;
 }
@@ -561,9 +562,22 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  margin-left: 72px;
+  /* justify-content: space-between; */
 }
 
+.list-hotels__list li img {
+  margin-right: 30px;
+}
+
+.list-hotels__inner-1 {
+  width: 800px;
+}
+
+.list-hotels__list .list-hotels__rating {
+  align-self: flex-end;
+}
+/*
 .list-hotels__inner-1 {
   display: flex;
   flex-wrap: wrap;
@@ -591,4 +605,4 @@ body {
 
 .list-hotels__img {
   order: -1;
-}
+} */
