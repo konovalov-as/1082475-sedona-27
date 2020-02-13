@@ -378,18 +378,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 61px;
 }
 
-.info-main img {
+.info-main__welcome {
+  margin-top: 132px;
   margin-bottom: 140px;
 }
 
-.info-main p:first-of-type {
+.info-main__paragraph-1 {
   width: 440px;
   margin: 0;
   padding: 0;
-  margin-bottom: 38px;
+  margin-bottom: 26px;
+}
+
+.info-main__paragraph-2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 46px;
 }
 
 /* Advantages style */
@@ -569,6 +575,17 @@ body {
 
 /*  Decoration style */
 /* Page index */
+.main-container {
+  position: relative;
+}
+
+.main-header {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
 .main-navigation__list a {
   display: block;
   width: 300px;
@@ -585,9 +602,9 @@ body {
 .info-main {
   position: relative;
   background-image: url(../img/intro-mask.svg), url(../img/background-photo.jpg);
-  background-size: 1203px 59px, 1200px 773px;
+  background-size: 1203px 59px, 1200px 800px;
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 425px, 0 0;
+  background-position: 0 506px, 0 -27px;
 }
 
 .info-main::before {
