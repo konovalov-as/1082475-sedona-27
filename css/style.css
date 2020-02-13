@@ -358,7 +358,6 @@ body {
   position: absolute;
   top: 0;
   left: calc(50% - 70px);
-  order: 2;
   width: 140px;
   height: 72px;
 }
@@ -388,6 +387,8 @@ body {
 
 .info-main p:first-of-type {
   width: 440px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 38px;
 }
 
@@ -582,8 +583,42 @@ body {
 }
 
 .info-main {
+  position: relative;
   background-image: url(../img/intro-mask.svg), url(../img/background-photo.jpg);
+  background-size: 1203px 59px, 1200px 773px;
   background-repeat: no-repeat, no-repeat;
+  background-position: 0 425px, 0 0;
+}
+
+.info-main::before {
+  content: "";
+  width: 100%;
+  /* Не уверен, что допустимо указание фиксировнной высоты */
+  height: 216px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.main-navigation__logo,
+.info-main__paragraph-1,
+.info-main__paragraph-2 {
+  z-index: 100;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation__logo img {
+  width: 140px;
+  height: 72px;
+}
+
+.info-main__welcome {
+  width: 459px;
+  height: 353px;
 }
 /*
 .list-hotels__inner-1 {
