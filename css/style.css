@@ -459,9 +459,9 @@ body {
   align-items: center;
 }
 
-.search-hotels p:first-of-type {
+/* .search-hotels p:first-of-type {
   margin-top: 100px;
-}
+} */
 
 .search-hotels__open-form {
   width: 568px;
@@ -469,14 +469,16 @@ body {
   height: 86px;
 }
 
-.search-hotels form {
+.search-hotels__form {
   width: 568px;
   /* Временно, для определения высоты */
   height: 395px;
-  padding-top: 55px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-top: 61px;
+  padding-bottom: 55px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 /* Map style */
@@ -730,6 +732,62 @@ h3.advantages__title {
   flex-direction: column;
   /* align-items: center; */
   margin: auto;
+}
+
+/* Search styles */
+.search-hotels__paragraph-1 {
+  margin: 0;
+  margin-top: 52px;
+  margin-bottom: 25px;
+}
+
+.search-hotels__paragraph-2 {
+  margin: 0;
+  margin-bottom: 46px;
+}
+
+.search-hotels button {
+  padding: 0;
+}
+
+.search-hotels__conteiner-date {
+  margin-bottom: 40px;
+}
+
+.search-hotels__container-adults,
+.search-hotels__container-children {
+  display: flex;
+}
+
+.search-hotels__container-adults button,
+.search-hotels__container-adults input,
+.search-hotels__container-children button,
+.search-hotels__container-children input {
+  width: 38px;
+}
+
+.search-hotels__inner-adults-children {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 58px;
+}
+
+.search-hotels .submit-form {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.open-calendar::after {
+  content: "";
+  background-image: url(../img/calendar.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search-hotels__conteiner-date input {
+  padding: 5px;
 }
 
 /*

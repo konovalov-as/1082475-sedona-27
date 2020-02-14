@@ -142,16 +142,22 @@
         </section>
         <section class="search-hotels">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
-          <p class="text-center">Заинтересовались?</p>
-          <p class="text-center">
+          <p class="search-hotels__paragraph-1 text-center">
+            Заинтересовались?
+          </p>
+          <p class="search-hotels__paragraph-2 text-center">
             Укажите предполагаемые даты поездки, <br />
             и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
           <button class="search-hotels__open-form text-center" type="button">
             Поиск гостиницы в Седоне
           </button>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="conteiner-date">
+          <form
+            class="search-hotels__form"
+            action="https://echo.htmlacademy.ru"
+            method="post"
+          >
+            <div class="search-hotels__conteiner-date">
               <label for="check-in">Дата заезда:</label>
               <input
                 class="date-chek-in-out"
@@ -163,7 +169,7 @@
               />
               <button class="open-calendar" type="button">Календарь</button>
             </div>
-            <div class="conteiner-date">
+            <div class="search-hotels__conteiner-date">
               <label for="check-out">Дата выезда:</label>
               <input
                 class="date-chek-in-out"
@@ -175,30 +181,32 @@
               />
               <button class="open-calendar" type="button">Календарь</button>
             </div>
-            <div class="container-adults">
-              <label for="adults">Взрослые:</label>
-              <button type="button">-</button>
-              <input
-                class="no-arrow text-center count-clients"
-                id="adults"
-                type="number"
-                name="count-adult"
-                placeholder="2"
-                required
-              />
-              <button type="button">+</button>
-            </div>
-            <div class="container-children">
-              <label for="children">Дети:</label>
-              <button type="button">-</button>
-              <input
-                class="no-arrow text-center count-clients"
-                id="children"
-                type="number"
-                name="count-children"
-                placeholder="0"
-              />
-              <button type="button">+</button>
+            <div class="search-hotels__inner-adults-children">
+              <div class="search-hotels__container-adults">
+                <label for="adults">Взрослые:</label>
+                <button type="button">-</button>
+                <input
+                  class="no-arrow text-center count-clients"
+                  id="adults"
+                  type="number"
+                  name="count-adult"
+                  placeholder="2"
+                  required
+                />
+                <button type="button">+</button>
+              </div>
+              <div class="search-hotels__container-children">
+                <label for="children">Дети:</label>
+                <button type="button">-</button>
+                <input
+                  class="no-arrow text-center count-clients"
+                  id="children"
+                  type="number"
+                  name="count-children"
+                  placeholder="0"
+                />
+                <button type="button">+</button>
+              </div>
             </div>
             <button class="submit-form text-center" type="submit">Найти</button>
           </form>
