@@ -395,10 +395,18 @@ body {
 .info-main__paragraph-2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 46px;
+  margin-bottom: 50px;
 }
 
 /* Advantages style */
+.advantages__wrapper {
+  display: flex;
+}
+
+.advantages__content--right {
+  order: 1;
+}
+
 .advantages {
   display: flex;
   flex-wrap: wrap;
@@ -406,14 +414,19 @@ body {
 
 .advantages__content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 400px;
+}
+
+.advantages__container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 280px;
 }
 
 .conditions__list {
   /* Временно, для определения высоты */
-  height: 290px;
+  /* height: 290px; */
 }
 
 .conditions__list,
@@ -523,7 +536,7 @@ body {
   list-style: none;
 }
 
-/* Sort-hotelsstyle */
+/* Sort-hotels style */
 .sort-hotels {
   display: flex;
   align-items: center;
@@ -575,15 +588,26 @@ body {
 
 /*  Decoration style */
 /* Page index */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-container {
   position: relative;
 }
 
+/* Header styles */
 .main-header {
   position: absolute;
   top: 0;
   z-index: 100;
   background-color: white;
+}
+
+.main-navigation__logo img {
+  width: 140px;
+  height: 72px;
 }
 
 .main-navigation__list a {
@@ -599,6 +623,7 @@ body {
   text-align: right;
 }
 
+/* Information styles */
 .info-main {
   position: relative;
   background-image: url(../img/intro-mask.svg), url(../img/background-photo.jpg);
@@ -623,20 +648,90 @@ body {
   z-index: 100;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.main-navigation__logo img {
-  width: 140px;
-  height: 72px;
-}
-
 .info-main__welcome {
   width: 459px;
   height: 353px;
 }
+
+/* Advantages & conditions styles */
+.advantages__content h3 {
+  margin: 0;
+}
+
+.advantages__content span {
+  display: block;
+}
+
+.advantages__content p {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__span-2,
+p.advantages__paragraph-1,
+h3.advantages__title {
+  margin-bottom: 25px;
+}
+
+.conditions__list {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.conditions__item {
+  width: 400px;
+}
+
+.conditions__item p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.conditions__incons {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.conditions__incons::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 75px;
+  height: 76px;
+  margin-bottom: 25px;
+}
+
+.conditions__incons--housing,
+.conditions__incons--food,
+.conditions__incons--souvenirs {
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.conditions__incons--housing {
+  background-image: url(../img/icon-1.svg);
+}
+
+.conditions__incons--food {
+  background-image: url(../img/icon-2.svg);
+}
+
+.conditions__incons--souvenirs {
+  background-image: url(../img/icon-3.svg);
+}
+
+.attractions__list p,
+.attractions__list h3 {
+  margin: 0;
+}
+
+.attractions__list li {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: auto;
+}
+
 /*
 .list-hotels__inner-1 {
   display: flex;
