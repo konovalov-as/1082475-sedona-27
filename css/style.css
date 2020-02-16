@@ -424,11 +424,6 @@ body {
   width: 280px;
 }
 
-.conditions__list {
-  /* Временно, для определения высоты */
-  /* height: 290px; */
-}
-
 .conditions__list,
 .attractions__list {
   display: flex;
@@ -464,9 +459,9 @@ body {
 } */
 
 .search-hotels__open-form {
-  width: 568px;
-  /* Временно, для определения высоты */
-  height: 86px;
+  max-width: 568px;
+  width: 100%;
+  padding: 30px 5px;
 }
 
 .search-hotels__form {
@@ -746,9 +741,9 @@ h3.advantages__title {
   margin-bottom: 46px;
 }
 
-.search-hotels button {
+/* .search-hotels button {
   padding: 0;
-}
+} */
 
 .search-hotels__conteiner-date {
   margin-bottom: 40px;
@@ -777,13 +772,6 @@ h3.advantages__title {
   padding-bottom: 16px;
   padding-left: 17px;
   padding-right: 17px;
-}
-
-.open-calendar::after {
-  content: "";
-  background-image: url(../img/calendar.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .search-hotels__conteiner-date input {
