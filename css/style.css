@@ -814,6 +814,14 @@ h3.advantages__title {
   z-index: 100;
 }
 
+/* Page hotels */
+/* Header style */
+.hotels-container {
+  position: relative;
+}
+
+/* Filters style */
+
 /*
 .list-hotels__inner-1 {
   display: flex;
