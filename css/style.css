@@ -252,16 +252,17 @@ body {
 }
 
 /* Sort style */
-.sort-hotels span:first-of-type {
+.sort-hotels__found {
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.sort-hotels span:nth-of-type(2) {
+.sort-hotels__sorting {
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-right: 40px;
 }
 
 .sort-hotels a {
@@ -524,7 +525,7 @@ body {
 
 .filter-hotels {
   /* Временно, для определения высоты */
-  min-height: 217px;
+  min-height: 271px;
 }
 
 .filter-hotels .infrastructure-list,
@@ -539,19 +540,21 @@ body {
   display: flex;
   align-items: center;
   /* Временно, для определения высоты */
-  min-height: 86px;
+  /* min-height: 86px; */
+  padding: 32px 73px;
+  padding-right: 0;
 }
 
-.sort-hotels span:first-of-type {
-  width: 160px;
-  margin-left: 72px;
-  margin-right: 49px;
+.sort-hotels__found {
+  min-width: 120px;
+  /* margin-left: 72px; */
+  margin-right: 44px;
 }
 
 .sort-hotels__list {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   margin: 0;
   padding: 0;
   list-style: none;
@@ -825,7 +828,7 @@ h3.advantages__title {
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
   background-position: 0 -270px;
-  padding: 31px 73px;
+  padding: 22px 72px;
   padding-top: 35px;
 }
 
@@ -833,7 +836,7 @@ h3.advantages__title {
   background-color: transparent;
 }
 
-/* Filter range style */
+/* Filter range style - demos7*/
 .filter-range {
   width: 330px;
   color: #ffffff;
@@ -965,8 +968,27 @@ h3.advantages__title {
 
   background: #ffffff;
 }
-/* Filter range style */
+/* Filter range style - demos7 */
 
+/* Sort style */
+.sort-hotels__list li {
+  padding-right: 33px;
+}
+
+.sort-hotels__list li:nth-child(3) {
+  padding-right: 503px;
+}
+
+.sort-hotels__list li:nth-child(4) {
+  padding-right: 12px;
+}
+
+/* List hotels style */
+
+/* Footer styles */
+.main-footer--hotels {
+  position: static;
+}
 /*
 .list-hotels__inner-1 {
   display: flex;
