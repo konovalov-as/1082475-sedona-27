@@ -102,37 +102,40 @@
                 </li>
               </ul>
             </fieldset>
-            <div>
-              <fieldset>
-                <!-- Блок с двумя ползункаим -->
-                <legend>Стоимость в сутки (Р):</legend>
-                <input
-                  class="no-arrow text-center range-price"
-                  type="number"
-                  name="pricemin"
-                  value="0"
-                />
-                <input
-                  class="no-arrow text-center range-price"
-                  type="number"
-                  name="pricemax"
-                  value="3000"
-                />
-
-                <!-- Пример кода из раздела "Вопросы к разделу «Доступность и формы»" HTML Academy -->
-                <!-- <div class="range-slider">
-                      <input type="number" value="0" name="min" />
-                      <input type="number" value="0" name="max" />
-
-                      <div class="range-slider-track">
-                        <div class="range-slider-pin range-slider-pin-min"></div>
-                        <div class="range-slider-pin range-slider-pin-max"></div>
-                      </div>
-                    </div> -->
-                <!-- Пример кода из раздела "Вопросы к разделу «Доступность и формы»" HTML Academy -->
-              </fieldset>
-              <button class="submit-form" type="submit">Показать</button>
-            </div>
+            <fieldset>
+              <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price"
+                    >от
+                    <input
+                      class="no-arrow"
+                      type="number"
+                      name="min-price"
+                      value="0"
+                  /></label>
+                  <label class="max-price"
+                    >до
+                    <input
+                      class="no-arrow"
+                      type="number"
+                      name="max-price"
+                      value="3000"
+                  /></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">
+                  Показать
+                </button>
+              </div>
+            </fieldset>
+            <!-- <button class="submit-form" type="submit">Показать</button> -->
           </form>
         </section>
         <section class="sort-hotels">
