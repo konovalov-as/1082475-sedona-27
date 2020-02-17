@@ -358,16 +358,19 @@ body {
 .main-navigation__logo {
   position: absolute;
   top: 0;
-  left: calc(50% - 70px);
+  /* left: calc(50% - 70px); */
+  left: 50%;
+  transform: translateX(-50%);
   width: 140px;
   height: 72px;
 }
 
 .main-navigation__list {
   display: flex;
+  flex-wrap: wrap;
   /* width: 100%; */
   align-items: center;
-  height: 56px;
+  /* height: 56px; */
   margin: 0;
   padding: 0;
   list-style: none;
@@ -579,14 +582,6 @@ body {
   margin-right: 30px;
 }
 
-.list-hotels__inner-1 {
-  /* width: 800px; */
-}
-
-/* .list-hotels__list .list-hotels__rating {
-  align-self: flex-end;
-} */
-
 /*  Decoration style */
 /* Page index */
 img {
@@ -611,9 +606,29 @@ img {
   height: 72px;
 }
 
+.main-navigation__list {
+  padding: 0 56px;
+}
+
+.main-navigation__list li {
+  box-sizing: border-box;
+  padding: 15px 10px;
+  width: 249px;
+}
+
+.main-navigation__list li:nth-child(4n-2),
+.main-navigation__list li:nth-child(4n-1) {
+  width: 295px;
+}
+
+.main-navigation__list li:nth-child(4n-1),
+.main-navigation__list li:nth-child(4n) {
+  text-align: right;
+}
+
 .main-navigation__list a {
   display: block;
-  width: 300px;
+  /* width: 300px; */
 }
 
 .main-navigation__list--left {
