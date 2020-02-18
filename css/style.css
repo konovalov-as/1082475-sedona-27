@@ -340,7 +340,8 @@ body {
   box-sizing: inherit;
 }
 
-.main__wrapper {
+.main__wrapper,
+.hotels__wrapper {
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
