@@ -512,8 +512,11 @@ body {
 
 .main-footer__social-list {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  flex-basis: 157px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -539,7 +542,6 @@ body {
 .filter-hotels form {
   padding-top: 30px;
   display: flex;
-  justify-content: space-around;
 }
 
 .filter-hotels {
@@ -790,6 +792,10 @@ h3.advantages__title {
   margin-bottom: 46px;
 }
 
+.search-hotels__form input {
+  box-sizing: border-box;
+}
+
 .search-hotels__conteiner-date {
   margin-bottom: 27px;
 }
@@ -857,8 +863,13 @@ h3.advantages__title {
 }
 
 /* Footer styles */
+.main-footer__container-1 {
+  max-width: 225px;
+  width: 100%;
+  margin-right: -55px;
+}
+
 .main-footer__container-1 p {
-  /* padding: 0; */
   margin: 0;
 }
 
@@ -885,7 +896,10 @@ h3.advantages__title {
 .main-footer {
   background-color: white;
   opacity: 0.9;
-  padding: 36px 10px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: 132px;
+  padding-right: 101px;
   max-width: 1200px;
   width: 100%;
   position: absolute;
@@ -905,8 +919,25 @@ h3.advantages__title {
   background-repeat: no-repeat;
   background-position: 0 -270px;
   padding: 22px 72px;
-  padding-top: 35px;
+  padding-top: 52px;
 }
+
+.filter-hotels fieldset {
+  margin: 0;
+  padding: 0;
+  max-width: 150px;
+  width: 100%;
+}
+
+.filter-hotels .filter__infrastructure {
+  margin-right: 105px;
+}
+
+.filter-hotels .filter__type-housing {
+  margin-right: auto;
+}
+
+/*  */
 
 .filter-hotels .range-price {
   background-color: transparent;
