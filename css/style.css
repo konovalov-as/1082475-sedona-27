@@ -674,7 +674,7 @@ img {
   background-image: url(../img/intro-mask.svg), url(../img/background-photo.jpg);
   /* background-size: 1203px 59px, 1200px 800px; */
   background-repeat: no-repeat, no-repeat;
-  background-position:  0% 100.4%, 50% 28%;
+  background-position:  0 bottom, 50% 28%;
 }
 
 .welcome-main::before{
@@ -946,8 +946,8 @@ h3.advantages__title {
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
   background-position: 0 -270px;
-  padding-top: 31px;
-  padding-bottom: 10px;
+  padding-top: 26px;
+  padding-bottom: 7px;
   padding-left: 72px;
   padding-right: 72px;
 }
@@ -981,8 +981,8 @@ h3.advantages__title {
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
-  margin-left: 10px;
+  margin-bottom: 11px;
+  margin-left: 14px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -994,13 +994,13 @@ h3.advantages__title {
   align-items: center;
 
   height: 36px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   font-size: 0;
 
   border: 2px solid #ffffff;
   border-radius: 2px;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 .price-controls::after {
@@ -1065,10 +1065,20 @@ h3.advantages__title {
   height: 4px;
 
   background: #ababab;
-  border: 8px solid #ffffff;
+  border: 10px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+}
+
+.range-toggle::before {
+  position: absolute;
+  content: "";
+  border: 3px solid #adadad;
+  border-radius: 50%;
+  top: -3px;
+  left: -3px;
+
 }
 
 .range-toggle:hover {
@@ -1076,7 +1086,7 @@ h3.advantages__title {
 }
 
 .range-toggle-min {
-  left: 0;
+  left: -2px;
 }
 
 .range-toggle-max {
@@ -1424,13 +1434,13 @@ a.main-navigation__list--current {
 .login-checkbox,
 .filter-swim-pool {
   position: relative;
-  padding-left: 30px;
+  padding-left: 40px;
   cursor: pointer;
 }
 
 .infrastructure-list li,
 .type-housing-list li {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .login-checkbox input[type="checkbox"] + .checkbox-indicator,
@@ -1463,7 +1473,7 @@ a.main-navigation__list--current {
 
 .filter__infrastructure legend,
 .filter__type-housing legend {
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 /* checkbox css default */
