@@ -493,11 +493,112 @@ body {
   padding: 30px 5px;
 }
 
+@keyframes slideIn {
+    0% {
+      transform-origin: top;
+      /* transform: translateY(100%); */
+      transform: scale(0);
+    }
+    10% {
+      transform-origin: top;
+      /* transform: translateY(80%); */
+      transform: scaleY(0.1);
+    }
+    20% {
+      transform-origin: top;
+      /* transform: translateY(60%); */
+      transform: scaleY(0.3);
+    }
+    30% {
+      transform-origin: top;
+      /* transform: translateY(50%); */
+      transform: scaleY(0.5);
+    }
+    40% {
+      transform-origin: top;
+      /* transform: translateY(40%); */
+      transform: scaleY(0.7);
+    }
+    50% {
+      transform-origin: top;
+      /* transform: translateY(20%); */
+      transform: scaleY(0.9);
+    }
+    100% {
+      transform-origin: top;
+      /* transform: translateY(0); */
+      transform: scaleY(1);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+      transform-origin: top;
+      /* transform: translateY(100%); */
+      transform: scale(1);
+    }
+    10% {
+      transform-origin: top;
+      /* transform: translateY(80%); */
+      transform: scaleY(0.9);
+    }
+    20% {
+      transform-origin: top;
+      /* transform: translateY(60%); */
+      transform: scaleY(0.8);
+    }
+    30% {
+      transform-origin: top;
+      /* transform: translateY(50%); */
+      transform: scaleY(0.5);
+    }
+    40% {
+      transform-origin: top;
+      /* transform: translateY(40%); */
+      transform: scaleY(0.3);
+    }
+    50% {
+      transform-origin: top;
+      /* transform: translateY(20%); */
+      transform: scaleY(0.1);
+    }
+    100% {
+      transform-origin: top;
+      /* transform: translateY(0); */
+      transform: scaleY(0);
+    }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform-origin: center;
+    transform: translateX(0);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform-origin: center;
+    transform: translateX(-15px);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform-origin: center;
+    transform: translateX(15px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.7s;
+}
+
+
 .search-hotels__form {
   width: 568px;
-  /* Временно, для определения высоты */
-  height: 395px;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding-top: 55px;
   padding-bottom: 55px;
@@ -505,10 +606,17 @@ body {
   padding-right: 55px;
 }
 
+.search-hotels__form--slide-in {
+  display: flex;
+  animation: slideIn 0.7s;
+}
+
+.search-hotels__form--slide-down {
+  display: none;
+  animation: slideDown 0.7s;
+}
 /* Map style */
 .map {
-  /* position: relative; */
-  /* top: -395px; */
   width: 100%;
 }
 
@@ -555,11 +663,6 @@ body {
 
 .filter-hotels form {
   display: flex;
-}
-
-.filter-hotels {
-  /* Временно, для определения высоты */
-  /* min-height: 271px; */
 }
 
 .filter-hotels .infrastructure-list,
