@@ -735,13 +735,6 @@ img {
 }
 
 /* Header styles */
-.main-header {
-  /* position: absolute; */
-  /* top: 0; */
-  /* z-index: 100; */
-  /* background-color: white; */
-}
-
 .main-navigation__logo img {
   width: 140px;
   height: 72px;
@@ -779,26 +772,6 @@ img {
   background-repeat: no-repeat, no-repeat;
   background-position:  0 bottom, 50% 28%;
 }
-
-.welcome-main::before{
-  /* content: ""; */
-  /* width: 100%; */
-  /* Не уверен, что допустимо указание фиксировнной высоты */
-  /* height: 50px; */
-  /* background-color: white; */
-  /* position: absolute; */
-  /* bottom: 0; */
-}
-
-.info-main{
-
-}
-
-/* .main-navigation__logo,
-.info-main__paragraph-1,
-.info-main__paragraph-2 {
-  z-index: 100;
-} */
 
 .welcome-main__logo  {
   width: 459px;
@@ -1534,6 +1507,7 @@ a.main-navigation__list--current {
 }
 
 /* Style checkbox, filter form*/
+/* checkbox css default */
 .login-checkbox,
 .filter-swim-pool {
   position: relative;
@@ -1553,20 +1527,27 @@ a.main-navigation__list--current {
   left: 0;
   width: 23px;
   height: 23px;
-  /* background-image: url("../img/checkbox-off.svg"); */
-  /* background-repeat: no-repeat; */
-
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
 }
 
-/* .filter-swim-pool input[type="checkbox"]:checked + .checkbox-indicator {
+/* checked */
+ .filter-swim-pool input[type="checkbox"]:checked + .checkbox-indicator {
   width: 27px;
   background-image: url("../img/checkbox-on.svg");
 }
 
+/* disabled */
 .filter-swim-pool input[type="checkbox"]:disabled + .checkbox-indicator {
   width: 27px;
   background-image: url("../img/checkbox-off-disabled.svg");
-} */
+}
+
+/* checked+disabled */
+.filter-swim-pool input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+  width: 27px;
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
 
 .infrastructure-list label,
 .type-housing-list label {
@@ -1577,69 +1558,4 @@ a.main-navigation__list--current {
 .filter__infrastructure legend,
 .filter__type-housing legend {
   margin-bottom: 25px;
-}
-
-/* checkbox css default */
-.login-checkbox input[type="checkbox"] + .checkbox-indicator-2,
-.filter-swim-pool input[type="checkbox"] + .checkbox-indicator-2 {
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  border: 2px solid white;
-  border-radius: 3px;
-  top: 0;
-  left: 0;
-}
-
-/* checked */
-.login-checkbox input[type="checkbox"] + .checkbox-indicator-2,
-.filter-swim-pool input[type="checkbox"]:checked + .checkbox-indicator-2:before,
-.filter-swim-pool input[type="checkbox"]:checked + .checkbox-indicator-2::after {
-  content: "";
-  position: absolute;
-  height: 4px;
-  background-color: white;
-}
-
-/* small check  */
-.filter-swim-pool input[type="checkbox"]:checked + .checkbox-indicator-2:before {
-  top: 8.2px;
-  left: 3px;
-  width: 8px;
-  transform: rotate(45deg);
-}
-
-/* big check */
-.filter-swim-pool input[type="checkbox"]:checked + .checkbox-indicator-2::after {
-  top: 5.7px;
-  left: 5.7px;
-  width: 20px;
-  transform: rotate(-45deg);
-  /* Таким способом тень у чексбокса получается не красивая */
-  /* box-shadow: 8px 0px 0px 2.2px rgba(89, 112, 135, 0.9); */
-  /* box-shadow: 8px 0px 0px 2.2px rgb(89, 112, 135); */
-  /* box-shadow: 8px 0px 0px 2.2px linear-gradient(to top right, #527fa8, #5a738d); */
-
-}
-
-/* disabled */
-.login-checkbox input[type="checkbox"]:disabled + .checkbox-indicator-2,
-.filter-swim-pool input[type="checkbox"]:disabled + .checkbox-indicator-2 {
-  border-color: #6a6a6a;
-}
-.filter-swim-pool input[type="checkbox"]:disabled + .checkbox-indicator-2:before,
-.filter-swim-pool input[type="checkbox"]:disabled + .checkbox-indicator-2::after {
-  border-color: transparent;
-}
-
-/* checked + disabled */
-.login-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator-2,
-.filter-swim-pool input[type="checkbox"]:checked:disabled + .checkbox-indicator-2 {
-  border-color: #6a6a6a;
-}
-
-.login-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator-2,
-.filter-swim-pool input[type="checkbox"]:checked:disabled + .checkbox-indicator-2:before,
-.filter-swim-pool input[type="checkbox"]:checked:disabled + .checkbox-indicator-2:after {
-  background-color: #6a6a6a;
 }
