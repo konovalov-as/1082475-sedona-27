@@ -43,17 +43,14 @@ btnSubmitForm.addEventListener("click", function (evt) {
     formSearchHotels.classList.add("modal-error");
 
     if (!inpDateChekIn.value) {
-      // evt.preventDefault();
       inpDateChekIn.style.borderColor = "red";
     }
 
     if (!inpDateChekOut.value) {
-      // evt.preventDefault();
       inpDateChekOut.style.borderColor = "red";
     }
 
     if (!inpAdults.value) {
-      // evt.preventDefault();
       inpAdults.style.borderColor = "red";
     }
   } else {

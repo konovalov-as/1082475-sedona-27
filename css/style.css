@@ -55,7 +55,6 @@ body {
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
-  /* text-align: center; */
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -64,10 +63,6 @@ body {
 .welcome-main {
   background-color: #68a0ae;
 }
-
-/* .info-main {
-  background-color: #68a0ae;
-} */
 
 .info-main p {
   line-height: 26px;
@@ -311,7 +306,6 @@ body {
 
 .list-hotels__rating {
   text-align: center;
-  /* background-color: #f2f2f2; */
   color: #666666;
 }
 
@@ -347,26 +341,15 @@ body {
 
 .main__wrapper,
 .hotels__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-.main-container {
-  /* background-color: #f2f2f2; */
-  background-size: 1280px auto;
-  background-repeat: no-repeat;
-  background-position: left top;
-  max-width: 1280px;
-  /* Временно, для определения высоты */
-  min-height: 2762px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
+.main-bg-color {
+  background-color: #f2f2f2;
 
-/* Header style */
-/* .main-header {
-  margin-bottom: 76px;
-} */
+}
 
 .main-navigation {
   position: relative;
@@ -377,7 +360,6 @@ body {
 .main-navigation__logo {
   position: absolute;
   top: 0;
-  /* left: calc(50% - 70px); */
   left: 50%;
   transform: translateX(-50%);
   width: 140px;
@@ -461,7 +443,7 @@ body {
 .attractions__list {
   display: flex;
   align-items: center;
-  width: 1200px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -469,7 +451,7 @@ body {
 
 .attractions__list {
   /* Временно, для определения высоты */
-  height: 256px;
+  min-height: 256px;
 }
 
 .attractions__list li {
@@ -482,10 +464,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-/* .search-hotels p:first-of-type {
-  margin-top: 100px;
-} */
 
 .search-hotels__open-form {
   max-width: 568px;
@@ -617,7 +595,9 @@ body {
 }
 /* Map style */
 .map {
+  max-width: 1200px;
   width: 100%;
+  height: auto;
 }
 
 /* Footer style */
@@ -649,18 +629,6 @@ body {
 }
 
 /* Page hotels */
-.hotels-container {
-  background-size: 1280px auto;
-  background-repeat: no-repeat;
-  background-position: left top;
-  max-width: 1280px;
-  /* Временно, для определения высоты */
-  min-height: 933px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
 .filter-hotels form {
   display: flex;
 }
@@ -676,8 +644,6 @@ body {
 .sort-hotels {
   display: flex;
   align-items: baseline;
-  /* Временно, для определения высоты */
-  /* min-height: 86px; */
   padding: 32px 73px;
 }
 
@@ -714,9 +680,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* margin-left: 72px; */
   padding: 15px 72px;
-  /* justify-content: space-between; */
 }
 
 .list-hotels__list li img {
@@ -747,7 +711,8 @@ img {
 .main-navigation__list li {
   box-sizing: border-box;
   padding: 15px 10px;
-  width: 249px;
+  max-width: 249px;
+  width: 100%;
 }
 
 .main-navigation__list li:nth-child(4n-2),
@@ -766,9 +731,7 @@ img {
 
 /* Information styles */
 .welcome-main{
-  /* position: relative; */
   background-image: url(../img/intro-mask.svg), url(../img/background-photo.jpg);
-  /* background-size: 1203px 59px, 1200px 800px; */
   background-repeat: no-repeat, no-repeat;
   background-position:  0 bottom, 50% 28%;
 }
@@ -1043,8 +1006,6 @@ h3.advantages__title {
   margin-right: auto;
 }
 
-/*  */
-
 .filter-hotels .range-price {
   background-color: transparent;
 }
@@ -1111,6 +1072,10 @@ h3.advantages__title {
 
   background: none;
   border: none;
+}
+
+.price-controls input::placeholder {
+  color: white;
 }
 
 .range-controls {
@@ -1253,12 +1218,6 @@ h3.advantages__title {
   font-weight: bold;
 }
 
-/* .list-hotels__rating::before {
-  content: "";
-  width: 100%;
-  height: 17px;
-} */
-
 .list-hotels__rating-star {
   display: inline-block;
   height: 17px;
@@ -1282,19 +1241,6 @@ h3.advantages__title {
   width: 44%;
   margin-left: auto;
 }
-/* .list-hotels__rating-3:before {
-  background-image: url(../img/star.svg), url(../img/star.svg),
-    url(../img/star.svg), url(../img/star.svg);
-  background-repeat: no-repeat;
-  background-position: 35px 0, 58px 0, 80px 0;
-}
-
-.list-hotels__rating-2:before {
-  background-image: url(../img/star.svg), url(../img/star.svg),
-    url(../img/star.svg), url(../img/star.svg);
-  background-repeat: no-repeat;
-  background-position: 58px 0, 80px 0;
-} */
 
 .list-hotels__rating {
   margin: 0;
