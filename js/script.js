@@ -55,8 +55,8 @@ btnSubmitForm.addEventListener("click", function (evt) {
     }
   } else {
     if (isStorageSupport) {
-      localStoroge.setItem("adults", inpAdults.value)
-      localStoroge.setItem("children", inpChildren.value)
+      localStorage.setItem("adults", inpAdults.value)
+      localStorage.setItem("children", inpChildren.value)
     }
   }
 
