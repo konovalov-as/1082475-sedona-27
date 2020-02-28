@@ -138,11 +138,16 @@ body {
   position: relative;
 }
 
-.search-hotels form {
+.search-hotels__container {
   position: absolute;
   top: 100%;
-  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 100;
+}
+
+.search-hotels form {
   background-color: white;
 }
 
@@ -440,7 +445,7 @@ body {
 .info-main__paragraph-2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 51px;
 }
 
 /* Advantages style */
@@ -475,18 +480,23 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin: 0 auto;
   width: 280px;
 }
 
 .advantages__container span {
   width: 215px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 31px;
 }
 
 .conditions__list,
@@ -977,14 +987,15 @@ img {
 .main-navigation__list li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 15px 10px;
-  max-width: 249px;
+  padding: 15px 15px;
+  max-width: 242px;
   width: 100%;
 }
 
 .main-navigation__list li:nth-child(4n-2),
 .main-navigation__list li:nth-child(4n-1) {
-  width: 295px;
+  max-width: 302px;
+  width: 100%;
 }
 
 .main-navigation__list li:nth-child(4n-1),
@@ -1000,7 +1011,7 @@ img {
 .welcome-main{
   background-image: url(../img/intro-mask.svg), url(../img/background-photo.jpg);
   background-repeat: no-repeat, no-repeat;
-  background-position:  0 bottom, 50% 28%;
+  background-position:  0 bottom, 50% 28.5%;
 }
 
 .welcome-main__logo  {
@@ -1132,14 +1143,14 @@ h3.advantages__title {
 .search-hotels__conteiner-date {
   display: -webkit-box;
   display: -ms-flexbox;
-  position: relative;
   display: flex;
+  position: relative;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  /* -webkit-box-align: center; */
+  /* -ms-flex-align: center; */
+  /* align-items: center; */
 }
 
 .open-calendar {
@@ -1195,6 +1206,7 @@ h3.advantages__title {
 .search-hotels__container-children button,
 .search-hotels__container-children .count-clients {
   width: 38px;
+  min-height: 40px; /* for support IE11*/
   padding: 7px;
 }
 
@@ -1222,6 +1234,7 @@ h3.advantages__title {
 }
 
 .search-hotels__conteiner-date input {
+  min-height: 44px; /* for support IE11*/
   padding: 5px;
 }
 
@@ -1298,7 +1311,7 @@ h3.advantages__title {
   margin: 0;
   padding: 0;
   max-width: 150px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .filter-hotels .filter__infrastructure {
