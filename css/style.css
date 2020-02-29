@@ -184,7 +184,7 @@ body {
 }
 
 .search-hotels label,
-.search-hotels .date-chek-in-out,
+.search-hotels .date-check-in-out,
 .search-hotels .count-clients,
 .search-hotels .open-calendar {
   font-size: 14px;
@@ -201,7 +201,7 @@ body {
   text-align: center;
 }
 
-.search-hotels .date-chek-in-out,
+.search-hotels .date-check-in-out,
 .search-hotels .count-clients {
   background-color: #f2f2f2;
   border: solid 2px #f2f2f2
@@ -903,7 +903,10 @@ body {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  padding: 29px 71px;
+  padding-top: 29px;
+  padding-bottom: 31px;
+  padding-left: 71px;
+  padding-right: 71px;
 }
 
 .sort-hotels__found {
@@ -947,11 +950,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  /* -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; */
-  padding-top: 36px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 26px;
   padding-left: 72px;
   padding-right: 72px;
 }
@@ -984,7 +984,7 @@ img {
 .main-navigation__list li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 15.5px 15px;
+  padding: 15px 15px;
   max-width: 242px;
   width: 100%;
 }
@@ -1108,7 +1108,8 @@ h3.advantages__title {
 }
 
 .attractions__list .attractions__title {
-  width: 160px;
+  max-width: 158px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 47px;
   margin-bottom: 24px;
@@ -1173,7 +1174,7 @@ h3.advantages__title {
   align-items: center;
 }
 
-.search-hotels__conteiner-date .date-chek-in-out {
+.search-hotels__conteiner-date .date-check-in-out {
   max-width: 346px;
   width: 100%;
   padding: 7px;
@@ -1277,15 +1278,19 @@ h3.advantages__title {
   margin: 0;
 }
 
+.main-footer__copyright span {
+  align-self: flex-start;
+  margin-top: 7px;
+}
+
 .main-footer__copyright a {
   margin-left: 10px;
 }
 
 .main-footer {
-  background-color: white;
-  opacity: 0.9;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  background-color: rgba(254, 254, 254, 0.9);
+  padding-top: 38px;
+  padding-bottom: 31px;
   padding-left: 132px;
   padding-right: 101px;
   max-width: 1200px;
@@ -1307,7 +1312,7 @@ h3.advantages__title {
   background-repeat: no-repeat;
   background-position: 0 -270px;
   padding-top: 26px;
-  padding-bottom: 6px;
+  padding-bottom: 7px;
   padding-left: 72px;
   padding-right: 72px;
 }
@@ -1316,15 +1321,16 @@ h3.advantages__title {
   margin: 0;
   padding: 0;
   max-width: 150px;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .filter-hotels .filter__infrastructure {
-  margin-right: 120px;
+  margin-right: 107px;
 }
 
 .filter-hotels .filter__type-housing {
   margin-right: auto;
+  /* margin-right: 306px; */
 }
 
 .filter-hotels .range-price {
@@ -1369,7 +1375,7 @@ h3.advantages__title {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50.5%;
 
   width: 2px;
   height: 22px;
@@ -1383,10 +1389,12 @@ h3.advantages__title {
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
-  /* width: 90px; */
+.price-controls .min-price {
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+  padding-left: 75px;
 }
 
 .price-controls input {
@@ -1459,13 +1467,13 @@ h3.advantages__title {
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79.5%;
 }
 
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 33px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1495,7 +1503,7 @@ h3.advantages__title {
 }
 
 .sort-hotels__direction li:first-of-type {
-  padding-right: 12px;
+  padding-right: 14px;
 }
 
 /* List hotels style */
@@ -1505,7 +1513,7 @@ h3.advantages__title {
 }
 
 .list-hotels__inner-1 {
-  max-width: 790px;
+  max-width: 780px;
   width: 100%;
   margin-right: auto;
 }
@@ -1518,8 +1526,9 @@ h3.advantages__title {
 
 .list-hotels__inner-2 p {
   margin: 0;
-  margin-right: 39px;
-  margin-bottom: 18px;
+  margin-right: 22px;
+  margin-bottom: 15px;
+  min-width: 95px;
 }
 
 .list-hotels__inner-2 p:nth-child(even) {
@@ -1536,7 +1545,7 @@ h3.advantages__title {
   max-width: 110px;
   width: 100%;
   margin-right: 6px;
-  padding: 4px 7px;
+  padding: 3px 7px;
   text-align: center;
   font-weight: bold;
 }
@@ -1544,7 +1553,7 @@ h3.advantages__title {
 .list-hotels__reserve {
   max-width: 142px;
   width: 100%;
-  padding: 4px 7px;
+  padding: 3px 7px;
   text-align: center;
   font-weight: bold;
 }
@@ -1559,17 +1568,17 @@ h3.advantages__title {
 }
 
 .list-hotels__rating-star--4 {
-  width: 88%;
+  width: 80%;
   margin-left: auto;
 }
 
 .list-hotels__rating-star--3 {
-  width: 66%;
+  width: 58%;
   margin-left: auto;
 }
 
 .list-hotels__rating-star--2 {
-  width: 44%;
+  width: 36%;
   margin-left: auto;
 }
 
@@ -1591,9 +1600,12 @@ h3.advantages__title {
 
 .list-hotels__rating-value {
   background-color: #f2f2f2;
-  max-width: 110px;
+  /* max-width: 110px; */
   width: 100%;
-  padding: 4px 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 11px;
 }
 
 /* Footer styles */
@@ -1695,16 +1707,22 @@ a.main-navigation__list--current {
 }
 
 .date-check-in:hover,
-.date-chek-in-out:hover,
+.date-check-in-out:hover,
 .count-clients:hover {
   background-color: #ebebeb;
 }
 
 .date-check-in:focus,
-.date-chek-in-out:focus,
+.date-check-in-out:focus,
 .count-clients:focus {
   background-color: #ffffff;
   border: solid 2px #e5e5e5;
+}
+
+.date-check-in::placeholder,
+.date-check-in-out::placeholder,
+.count-clients::placeholder {
+  color: black;
 }
 
 .search-hotels__inner-adults-children button {
