@@ -1,3 +1,9 @@
+let noJS = document.querySelector("html");
+noJS.classList.remove("no-js");
+
+let containerSearchHotels = document.querySelector(".search-hotels__container")
+containerSearchHotels.classList.remove("hidden");
+
 let btnSearchHotels = document.querySelector(".search-hotels__open-form");
 let formSearchHotels = document.querySelector(".search-hotels__form");
 let btnSubmitForm = formSearchHotels.querySelector(".submit-form");
@@ -16,26 +22,24 @@ try {
   isStorageSupport = false;
 }
 
-btnSearchHotels.addEventListener("click", function (evt) {
+btnSearchHotels.addEventListener("click", function(evt) {
   evt.preventDefault();
-  formSearchHotels.classList.toggle("search-hotels__form--slide-in");
+  containerSearchHotels.classList.toggle("search-hotels__container--slide-in");
 
   if (storageAdults) {
     inpAdults.value = storageAdults;
-    btnSubmitForm.focus();
   } else {
     inpAdults.focus();
   }
 
   if (storageChildren) {
     inpChildren.value = storageChildren;
-    btnSubmitForm.focus();
   } else {
     inpChildren.focus();
   }
 });
 
-btnSubmitForm.addEventListener("click", function (evt) {
+btnSubmitForm.addEventListener("click", function(evt) {
   if (!inpDateChekIn.value || !inpDateChekOut.value || !inpAdults.value) {
     evt.preventDefault();
     formSearchHotels.classList.remove("modal-error");

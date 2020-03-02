@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 
 <head>
   <meta charset="utf-8" />
@@ -99,21 +99,21 @@
             <img src="img/photo-bridge.jpg" alt="Фотография моста дьявола" width="800" height="256" />
           </div>
           <ul class="attractions__list text-center">
-            <li>
+            <li class="attractions__item">
               <h3 class="attractions__title">Небольшая площадь</h3>
               <p class="attractions__paragraph-1">— №3 —</p>
               <p class="attractions__paragraph-2">
                 Все достопримечательности находятся очень близко
               </p>
             </li>
-            <li>
+            <li class="attractions__item">
               <h3 class="attractions__title">Красивая дорога</h3>
               <p class="attractions__paragraph-1">— №4 —</p>
               <p class="attractions__paragraph-2">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
-            <li>
+            <li class="attractions__item">
               <h3 class="attractions__title">Мало туристов</h3>
               <p class="attractions__paragraph-1">— №5 —</p>
               <p class="attractions__paragraph-2">
@@ -131,10 +131,8 @@
             Укажите предполагаемые даты поездки, <br />
             и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
-          <button class="search-hotels__open-form text-center" type="button">
-            Поиск гостиницы в Седоне
-          </button>
-          <div class="search-hotels__container">
+          <a href="search-hotels.html" class="search-hotels__open-form text-center">Поиск гостиницы в Седоне</a>
+          <div class="search-hotels__container hidden">
             <form class="search-hotels__form" action="https://echo.htmlacademy.ru" method="post">
               <div class="search-hotels__conteiner-date">
                 <label for="check-in">Дата заезда:</label>
@@ -180,14 +178,13 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3935db6d3eeb9d5c614d27f0058c003193784dad81ff6ea4d90e90eaf8ba935d&amp;width=100%&amp;height=593&amp;lang=ru_RU&amp;scroll=true"></script>
+          <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3935db6d3eeb9d5c614d27f0058c003193784dad81ff6ea4d90e90eaf8ba935d&amp;height=593&amp;lang=ru_RU&amp;scroll=true"></script>
         </section>
       </main>
       <footer class="main-footer">
         <div class="main-footer__container-1">
           <p>#visitSEDONA</p>
           <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
-          <!-- <p>Тел: +7(495) 666-02-66</p> -->
         </div>
         <ul class="main-footer__social-list">
           <li>
