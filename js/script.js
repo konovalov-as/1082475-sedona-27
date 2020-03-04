@@ -5,8 +5,7 @@ let containerSearchHotels = document.querySelector(".search-hotels__container")
 containerSearchHotels.classList.remove("hidden");
 
 let btnSearchHotels = document.querySelector(".search-hotels__open-form");
-let formSearchHotels = document.querySelector(".search-hotels__form");
-let btnSubmitForm = formSearchHotels.querySelector(".submit-form");
+let formSearchHotels = containerSearchHotels.querySelector(".search-hotels__form");
 let inpDateChekIn = formSearchHotels.querySelector("#check-in");
 let inpDateChekOut = formSearchHotels.querySelector("#check-out");
 let inpAdults = formSearchHotels.querySelector("#adults");
@@ -39,10 +38,7 @@ btnSearchHotels.addEventListener("click", function(evt) {
   }
 });
 
-console.log(formSearchHotels);
 formSearchHotels.addEventListener("submit", function(evt) {
-  evt.preventDefault();
-  console.log(1);
   if (!inpDateChekIn.value || !inpDateChekOut.value || !inpAdults.value) {
     evt.preventDefault();
     formSearchHotels.classList.remove("modal-error");
