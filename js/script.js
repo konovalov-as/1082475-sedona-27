@@ -39,7 +39,10 @@ btnSearchHotels.addEventListener("click", function(evt) {
   }
 });
 
-btnSubmitForm.addEventListener("click", function(evt) {
+console.log(formSearchHotels);
+formSearchHotels.addEventListener("submit", function(evt) {
+  evt.preventDefault();
+  console.log(1);
   if (!inpDateChekIn.value || !inpDateChekOut.value || !inpAdults.value) {
     evt.preventDefault();
     formSearchHotels.classList.remove("modal-error");

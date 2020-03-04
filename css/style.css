@@ -154,9 +154,11 @@ body {
 }
 
 .search-hotels__container {
+  width: 568px;
   position: absolute;
   top: 100%;
-  left: 316px; /* for support IE11*/
+  left: 0;
+  right: 0;
   z-index: -1;
   margin: 0 auto;
   text-align: center;
@@ -258,6 +260,7 @@ body {
   color: black;
   line-height: 26px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* Page hotels */
@@ -630,7 +633,7 @@ body {
 }
 
 .search-hotels__form {
-  width: 568px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -664,9 +667,9 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .main-footer__social-list {
@@ -682,6 +685,8 @@ body {
   flex-basis: 156px;
   width: 100%;
   margin: 0;
+  margin-top: 3px;
+  margin-left: 6px;
   padding: 0;
   list-style: none;
 }
@@ -973,8 +978,8 @@ h3.advantages__title {
 }
 
 .search-hotels__conteiner-date label {
-  min-width: 91px;
-  margin-right: 20px;
+  min-width: 95px;
+  margin-right: 15px;
 }
 
 .open-calendar {
@@ -1075,6 +1080,7 @@ h3.advantages__title {
 
 .main-footer__container-1 p {
   margin: 0;
+  margin-bottom: 5px;
 }
 
 .main-footer__social-button {
@@ -1098,6 +1104,7 @@ h3.advantages__title {
   font-size: 14px;
   font-weight: normal;
   margin: 0;
+  margin-top: 7px;
 }
 
 .main-footer__copyright span {
@@ -1111,9 +1118,9 @@ h3.advantages__title {
 
 .main-footer {
   background-color: rgba(254, 254, 254, 0.9);
-  padding-top: 38px;
+  padding-top: 32px;
   padding-bottom: 31px;
-  padding-left: 132px;
+  padding-left: 123px;
   padding-right: 101px;
   max-width: 1200px;
   width: 100%;
@@ -1714,6 +1721,19 @@ a.main-navigation__list--current {
 .filter-swim-pool input[type="checkbox"]:checked:disabled + .checkbox-indicator {
   width: 27px;
   background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.filter-swim-pool input[type="checkbox"]:focus + .checkbox-indicator {
+  background-image: url("../img/checkbox-off.svg");
+  box-shadow: 0px 0px 0px 4px #4A90E2;
+  border-radius: 4px;
+}
+
+.filter-swim-pool input[type="checkbox"]:checked:focus + .checkbox-indicator {
+  width: 27px;
+  background-image: url("../img/checkbox-on.svg");
+  box-shadow: 0px 0px 0px 4px #4A90E2;
+  border-radius: 4px;
 }
 
 .infrastructure-list label,
