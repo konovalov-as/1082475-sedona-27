@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Седона: Гостиницы</title>
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/stylemin.css" />
+  <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
@@ -103,8 +103,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
+                  <div class="range-toggle range-toggle-min" tabindex="0"></div>
+                  <div class="range-toggle range-toggle-max" tabindex="0"></div>
                 </div>
                 <button class="btn-transparent" type="submit">
                   Показать
@@ -148,7 +148,7 @@
             Список гостиниц
           </h2>
           <ul class="list-hotels__list">
-            <li>
+            <li class="list-hotels__item">
               <a class="list-hotels__img" href="">
                 <img src="img/hotel-picture-1.jpg" alt="Фотография гостиницы Amara Resort & Spa" width="135" height="90" />
               </a>
@@ -170,7 +170,7 @@
                 <span class="list-hotels__rating-value">Рейтинг: 8,5</span>
               </p>
             </li>
-            <li>
+            <li class="list-hotels__item">
               <a class="list-hotels__img" href=""><img src="img/hotel-picture-2.jpg" alt="Фотография мотеля Desert Quail Inn" width="135" height="90" />
               </a>
               <div class="list-hotels__inner-1">
@@ -191,7 +191,7 @@
                 <span class="list-hotels__rating-value">Рейтинг: 8,9</span>
               </p>
             </li>
-            <li>
+            <li class="list-hotels__item">
               <a class="list-hotels__img" href=""><img src="img/hotel-picture-3.jpg" alt="Лужайка у апартаментов Villas at Poco Diablo" width="135" height="90" />
               </a>
               <div class="list-hotels__inner-1">
@@ -248,7 +248,7 @@
         </ul>
         <p class="main-footer__copyright text-center">
           <span>Website by</span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
             <span class="visually-hidden">HTML Academy</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="115" height="41" data-name="Layer 1" viewBox="0 0 113 39">
               <path fill="#f231f20"

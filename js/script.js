@@ -1,7 +1,10 @@
 let noJS = document.querySelector("html");
 noJS.classList.remove("no-js");
 
-let containerSearchHotels = document.querySelector(".search-hotels__container")
+let mapCity = document.querySelector(".map__city-img");
+mapCity.classList.add("visually-hidden");
+
+let containerSearchHotels = document.querySelector(".search-hotels__container");
 containerSearchHotels.classList.remove("hidden");
 
 let btnSearchHotels = document.querySelector(".search-hotels__open-form");

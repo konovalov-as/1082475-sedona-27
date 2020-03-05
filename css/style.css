@@ -3,16 +3,16 @@
   font-family: "PTSans";
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/ptsans.woff2) format("woff2"),
-    url(../fonts/ptsans.woff) format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
   font-family: "PTSans";
   font-weight: 700;
   font-style: normal;
-  src: url(../fonts/ptsansbold.woff2) format("woff2"),
-    url(../fonts/ptsansbold.woff) format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
 }
 
 /* Fonts, color and background-color style*/
@@ -435,7 +435,7 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -575,56 +575,56 @@ body {
 @-webkit-keyframes shake {
   0%,
   100% {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
   }
 
   20%,
   40%,
   60% {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: translateX(-15px);
-            transform: translateX(-15px);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: translateX(-15px);
+  transform: translateX(-15px);
   }
 
   30%,
   50%,
   70% {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: translateX(15px);
+  transform: translateX(15px);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
   }
 
   20%,
   40%,
   60% {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: translateX(-15px);
-            transform: translateX(-15px);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: translateX(-15px);
+  transform: translateX(-15px);
   }
 
   30%,
   50%,
   70% {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: translateX(15px);
+  transform: translateX(15px);
   }
 }
 
@@ -653,9 +653,10 @@ body {
   max-width: 1200px;
   width: 100%;
   height: 593px;
-  background-image: url("../img/map.png");
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.map__city-img {
+  margin: 0;
 }
 
 /* Footer style */
@@ -668,9 +669,6 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  /* -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; */
 }
 
 .main-footer__social-list {
@@ -776,7 +774,7 @@ body {
   padding-right: 72px;
 }
 
-.list-hotels__list li img {
+.list-hotels__item img {
   margin-right: 30px;
 }
 
@@ -826,7 +824,7 @@ img {
 
 /* Information styles */
 .welcome-main{
-  background-image: url(../img/intro-mask.svg), url(../img/background-photo.jpg);
+  background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position:  0 bottom, 50% 28.5%;
 }
@@ -896,17 +894,17 @@ h3.advantages__title {
 
 .conditions__incons--housing::before   {
   background-position-y: bottom;
-  background-image: url(../img/icon-1.svg);
+  background-image: url("../img/icon-1.svg");
 }
 
 .conditions__incons--food::before   {
   background-position-y: bottom;
-  background-image: url(../img/icon-2.svg);
+  background-image: url("../img/icon-2.svg");
 }
 
 .conditions__incons--souvenirs::before   {
   background-position-y: bottom;
-  background-image: url(../img/icon-3.svg);
+  background-image: url("../img/icon-3.svg");
 }
 
 .attractions__list p,
@@ -1087,6 +1085,7 @@ h3.advantages__title {
 .main-footer__social-button {
   background-color: #81b3d2;
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   width: 48px;
   height: 46px;
@@ -1138,7 +1137,7 @@ h3.advantages__title {
 
 /* Filters style */
 .filter-hotels {
-  background-image: url(../img/filter-background.jpg);
+  background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: 0 -270px;
   padding-top: 26px;
@@ -1307,6 +1306,12 @@ h3.advantages__title {
   background: #1c4f80;
 }
 
+.range-toggle:hover,
+.range-toggle:focus {
+  -webkit-box-shadow: 0 2px 2px 4px rgba(0, 1, 1, 0.4);
+  box-shadow: 0 2px 2px 4px rgba(0, 1, 1, 0.4);
+}
+
 .range-toggle-min {
   left: -2px;
 }
@@ -1331,7 +1336,8 @@ h3.advantages__title {
   cursor: pointer;
 }
 
-.btn-transparent:hover {
+.btn-transparent:hover,
+.btn-transparent:focus  {
   color: #000000;
 
   background: #ffffff;
@@ -1405,9 +1411,10 @@ h3.advantages__title {
 
 .list-hotels__rating-star {
   display: inline-block;
+  vertical-align: middle;
   height: 17px;
   width: 100%;
-  background-image: url(../img/star.svg);
+  background-image: url("../img/star.svg");
   background-repeat: space;
   background-position: right;
 }
@@ -1482,16 +1489,19 @@ a.main-navigation__list--current {
   color: black;
 }
 
-.sort-hotels__direction path {
+.sort-hotels__sort-up path,
+.sort-hotels__sort-down path {
   color: #cacaca;
 }
 
-.sort-hotels__direction a:hover path,
-.sort-hotels__direction a:focus path {
+.sort-hotels__sort-up:hover path,
+.sort-hotels__sort-up:focus path,
+.sort-hotels__sort-down:hover path,
+.sort-hotels__sort-down:focus path {
   fill: black;
 }
-
-.sort-hotels__direction a:active path {
+.sort-hotels__sort-up:active path,
+.sort-hotels__sort-down:active path {
   fill: #81b3d2;
 }
 
@@ -1503,6 +1513,7 @@ a.main-navigation__list--current {
 
 .list-hotels__detail:active {
   background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .list-hotels__reserve:hover,
@@ -1512,6 +1523,7 @@ a.main-navigation__list--current {
 
 .list-hotels__reserve:active {
   background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .list-hotels__title a:hover,
@@ -1672,12 +1684,12 @@ a.main-navigation__list--current {
 }
 
 /* HTML Academy */
-.main-footer__copyright a:hover path,
-.main-footer__copyright a:focus path {
+.main-footer__copyright-link:hover path,
+.main-footer__copyright-link:focus path {
   fill: #81b3d2;
 }
 
-.main-footer__copyright a:active path {
+.main-footer__copyright-link:active path {
   fill: #bdbbbc;
 }
 
