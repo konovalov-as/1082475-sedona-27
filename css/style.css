@@ -1308,8 +1308,8 @@ h3.advantages__title {
 
 .range-toggle:hover,
 .range-toggle:focus {
-  -webkit-box-shadow: 0 2px 2px 4px rgba(0, 1, 1, 0.4);
-  box-shadow: 0 2px 2px 4px rgba(0, 1, 1, 0.4);
+  border-width: 11px;
+  top: -10px;
 }
 
 .range-toggle-min {
